@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RSS - Rana Shoes Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="logo-box">
+            <div class="logo">RSS</div>
+            <h1>Rana Shoes Shop</h1>
+        </div>
+        <nav>
+            <a href="#products">Shoes</a>
+            <a href="#cart">Cart</a>
+            <a href="#reviews">Reviews</a>
+            <a href="#complaints">Complaints</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <h2>Best Shoes Collection in Pakistan</h2>
+        <p>10 Stylish Shoes Available</p>
+    </section>
+
+    <!-- PRODUCTS SECTION -->
+    <section id="products">
+        <h2 class="section-title">Our Shoes Products</h2>
+        <div class="products">
+            <!-- PRODUCT 1 -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff" alt="Nike Air Max">
+                <h3>Nike Air Max</h3>
+                <p class="price">Rs 8,500</p>
+                <label for="size1">Size</label>
+                <select id="size1">
+                    <option>39</option>
+                    <option>40</option>
+                    <option>41</option>
+                    <option>42</option>
+                </select>
+                <label for="color1">Color</label>
+                <select id="color1">
+                    <option>Black</option>
+                    <option>White</option>
+                    <option>Red</option>
+                </select>
+                <label for="qty1">Quantity</label>
+                <input type="number" id="qty1" value="1" min="1">
+                <button onclick="addToCart('Nike Air Max', 8500, 'https://images.unsplash.com/photo-1542291026-7eec264c27ff', document.getElementById('size1').value, document.getElementById('color1').value, document.getElementById('qty1').value)">Add To Cart</button>
+            </div>
+
+            <!-- PRODUCT 2 -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519" alt="Puma Runner">
+                <h3>Puma Runner</h3>
+                <p class="price">Rs 7,000</p>
+                <label for="size2">Size</label>
+                <select id="size2">
+                    <option>39</option>
+                    <option>40</option>
+                    <option>41</option>
+                    <option>42</option>
+                </select>
+                <label for="color2">Color</label>
+                <select id="color2">
+                    <option>Black</option>
+                    <option>Blue</option>
+                    <option>White</option>
+                </select>
+                <label for="qty2">Quantity</label>
+                <input type="number" id="qty2" value="1" min="1">
+                <button onclick="addToCart('Puma Runner', 7000, 'https://images.unsplash.com/photo-1600185365483-26d7a4cc7519', document.getElementById('size2').value, document.getElementById('color2').value, document.getElementById('qty2').value)">Add To Cart</button>
+            </div>
+
+            <!-- PRODUCT 3 -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1608231387042-66d1773070a5" alt="Adidas Sport">
+                <h3>Adidas Sport</h3>
+                <p class="price">Rs 9,200</p>
+                <label for="size3">Size</label>
+                <select id="size3">
+                    <option>39</option>
+                    <option>40</option>
+                    <option>41</option>
+                    <option>42</option>
+                </select>
+                <label for="color3">Color</label>
+                <select id="color3">
+                    <option>Black</option>
+                    <option>Red</option>
+                    <option>Gray</option>
+                </select>
+                <label for="qty3">Quantity</label>
+                <input type="number" id="qty3" value="1" min="1">
+                <button onclick="addToCart('Adidas Sport', 9200, 'https://images.unsplash.com/photo-1608231387042-66d1773070a5', document.getElementById('size3').value, document.getElementById('color3').value, document.getElementById('qty3').value)">Add To Cart</button>
+            </div>
+
+            <!-- PRODUCT 4 -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1543508282-6319a3e2621f" alt="Reebok Classic">
+                <h3>Reebok Classic</h3>
+                <p class="price">Rs 6,500</p>
+                <label for="size4">Size</label>
+                <select id="size4">
+                    <option>39</option>
+                    <option>40</option>
+                    <option>41</option>
+                    <option>42</option>
+                </select>
+                <label for="color4">Color</label>
+                <select id="color4">
+                    <option>White</option>
+                    <option>Black</option>
+                    <option>Blue</option>
+                </select>
+                <label for="qty4">Quantity</label>
+                <input type="number" id="qty4" value="1" min="1">
+                <button onclick="addToCart('Reebok Classic', 6500, 'https://images.unsplash.com/photo-1543508282-6319a3e2621f', document.getElementById('size4').value, document.getElementById('color4').value, document.getElementById('qty4').value)">Add To Cart</button>
+            </div>
+
+            <!-- PRODUCT 5 -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77" alt="Jordan Black">
+                <h3>Jordan Black</h3>
+                <p class="price">Rs 10,500</p>
+                <label for="size5">Size</label>
+                <select id="size5">
+                    <option>39</option>
+                    <option>40</option>
+                    <option>41</option>
+                    <option>42</option>
+                </select>
+                <label for="color5">Color</label>
+                <select id="color5">
+                    <option>Black</option>
+                    <option>Red</option>
+                    <option>White</option>
+                </select>
+                <label for="qty5">Quantity</label>
+                <input type="number" id="qty5" value="1" min="1">
+                <button onclick="addToCart('Jordan Black', 10500, 'https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77', document.getElementById('size5').value, document.getElementById('color5').value, document.getElementById('qty5').value)">Add To Cart</button>
+            </div>
+
+            <!-- PRODUCT 6 -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1511556532299-8f662fc26c06" alt="Nike Red">
+                <h3>Nike Red</h3>
+                <p class="price">Rs 8,900</p>
+                <label for="size6">Size</label>
+                <select id="size6">
+                    <option>39</option>
+                    <option>40</option>
+                    <option>41</option>
+                    <option>42</option>
+                </select>
+                <label for="color6">Color</label>
+                <select id="color6">
+                    <option>Red</option>
+                    <option>Black</option>
+                    <option>White</option>
+                </select>
+                <label for="qty6">Quantity</label>
+                <input type="number" id="qty6" value="1" min="1">
+                <button onclick="addToCart('Nike Red', 8900, 'https://images.unsplash.com/photo-1511556532299-8f662fc26c06', document.getElementById('size6').value, document.getElementById('color6').value, document.getElementById('qty6').value)">Add To Cart</button>
+            </div>
+
+            <!-- PRODUCT 7 -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1460353581641-37baddab0fa2" alt="Adidas White">
+                <h3>Adidas White</h3>
+                <p class="price">Rs 7,600</p>
+                <label for="size7">Size</label>
+                <select id="size7">
+                    <option>39</option>
+                    <option>40</option>
+                    <option>41</option>
+                    <option>42</option>
+                </select>
+                <label for="color7">Color</label>
+                <select id="color7">
+                    <option>White</option>
+                    <option>Blue</option>
+                    <option>Black</option>
+                </select>
+                <label for="qty7">Quantity</label>
+                <input type="number" id="qty7" value="1" min="1">
+                <button onclick="addToCart('Adidas White', 7600, 'https://images.unsplash.com/photo-1460353581641-37baddab0fa2', document.getElementById('size7').value, document.getElementById('color7').value, document.getElementById('qty7').value)">Add To Cart</button>
+            </div>
+
+            <!-- PRODUCT 8 -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d" alt="Puma Street">
+                <h3>Puma Street</h3>
+                <p class="price">Rs 6,900</p>
+                <label for="size8">Size</label>
+                <select id="size8">
+                    <option>39</option>
+                    <option>40</option>
+                    <option>41</option>
+                    <option>42</option>
+                </select>
+                <label for="color8">Color</label>
+                <select id="color8">
+                    <option>Green</option>
+                    <option>Black</option>
+                    <option>White</option>
+                </select>
+                <label for="qty8">Quantity</label>
+                <input type="number" id="qty8" value="1" min="1">
+                <button onclick="addToCart('Puma Street', 6900, 'https://images.unsplash.com/photo-1491553895911-0055eca6402d', document.getElementById('size8').value, document.getElementById('color8').value, document.getElementById('qty8').value)">Add To Cart</button>
+            </div>
+
+            <!-- PRODUCT 9 -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772" alt="Fila Blue">
+                <h3>Fila Blue</h3>
+                <p class="price">Rs 5,800</p>
+                <label for="size9">Size</label>
+                <select id="size9">
+                    <option>39</option>
+                    <option>40</option>
+                    <option>41</option>
+                    <option>42</option>
+                </select>
+                <label for="color9">Color</label>
+                <select id="color9">
+                    <option>Blue</option>
+                    <option>Black</option>
+                    <option>Gray</option>
+                </select>
+                <label for="qty9">Quantity</label>
+                <input type="number" id="qty9" value="1" min="1">
+                <button onclick="addToCart('Fila Blue', 5800, 'https://images.unsplash.com/photo-1549298916-b41d501d3772', document.getElementById('size9').value, document.getElementById('color9').value, document.getElementById('qty9').value)">Add To Cart</button>
+            </div>
+
+            <!-- PRODUCT 10 -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1603808033192-082d6919d3e1" alt="Converse Star">
+                <h3>Converse Star</h3>
+                <p class="price">Rs 6,300</p>
+                <label for="size10">Size</label>
+                <select id="size10">
+                    <option>39</option>
+                    <option>40</option>
+                    <option>41</option>
+                    <option>42</option>
+                </select>
+                <label for="color10">Color</label>
+                <select id="color10">
+                    <option>Black</option>
+                    <option>White</option>
+                    <option>Red</option>
+                </select>
+                <label for="qty10">Quantity</label>
+                <input type="number" id="qty10" value="1" min="1">
+                <button onclick="addToCart('Converse Star', 6300, 'https://images.unsplash.com/photo-1603808033192-082d6919d3e1', document.getElementById('size10').value, document.getElementById('color10').value, document.getElementById('qty10').value)">Add To Cart</button>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- CART SECTION -->
+    <section id="cart">
+        <h2 class="cart-title">YOUR CART</h2>
+        <div class="cart-header">
+            <p>PRODUCT</p>
+            <p>QUANTITY</p>
+            <p>TOTAL</p>
+        </div>
+        <hr>
+        <div id="cart-items"></div>
+        <div class="grand-total">
+            <h2 id="total">Grand Total: Rs 0</h2>
+            <button class="purchase-btn" onclick="showPayment()">Purchase Now</button>
+        </div>
+
+        <!-- PAYMENT SECTION -->
+        <div id="payment-section" class="payment-section">
+            <h2>Payment Method</h2>
+            <p class="small-text">Choose how you want to pay</p>
+            
+            <!-- PAYMENT OPTIONS -->
+            <div class="payment-box">
+                <label class="pay-option">
+                    <input type="radio" name="pay" checked>
+                    <span>Pre-Payment</span>
+                    <strong>FREE</strong>
+                </label>
+                <label class="pay-option">
+                    <input type="radio" name="pay">
+                    <span>BaadMay | Buy Now Pay Later</span>
+                    <strong>Rs 250</strong>
+                </label>
+                <label class="pay-option">
+                    <input type="radio" name="pay">
+                    <span>Cash on Delivery</span>
+                    <strong>Rs 250</strong>
+                </label>
+            </div>
+
+            <!-- CARD PAYMENT -->
+            <h3>Payment</h3>
+            <p class="small-text">All transactions are secure and encrypted</p>
+            
+            <div class="card-box">
+                <label>
+                    <input type="radio" name="pay-method" checked>
+                    Debit/Credit Card
+                </label>
+                <input type="text" placeholder="Card number">
+                <div class="row">
+                    <input type="text" placeholder="MM / YY">
+                    <input type="text" placeholder="Security code">
+                </div>
+                <input type="text" placeholder="Name on card">
+                <label class="checkbox">
+                    <input type="checkbox" checked>
+                    Use shipping address as billing address
+                </label>
+            </div>
+
+            <!-- MOBILE WALLETS -->
+            <div class="wallets">
+                <label><input type="radio" name="pay-method"> XPay - JazzCash</label>
+                <label><input type="radio" name="pay-method"> PAYFAST (Wallets & Transfer)</label>
+            </div>
+
+            <!-- PAY BUTTON -->
+            <button class="pay-now">Pay Now</button>
+        </div>
+    </section>
+
+    <!-- REVIEWS SECTION -->
+    <section id="reviews">
+        
+        <h2 class="section-title">Customer Reviews</h2>
+        <div class="review-box">
+            <div class="review-card">
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff" alt="Nike Air Max">
+                <h3>Nike Air Max</h3>
+                <p>⭐⭐⭐⭐⭐ <br> Very comfortable and stylish shoes.</p>
+            </div>
+            <div class="review-card">
+                <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519" alt="Puma Runner">
+                <h3>Puma Runner</h3>
+                <p>⭐⭐⭐⭐ <br> Good quality for daily use.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- COMPLAINTS SECTION -->
+    <section id="complaints">
+        <h2 class="section-title">Customer Complaints</h2>
+        <div class="complaint-box">
+            <div class="complaint-card">
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff" alt="Nike Air Max">
+                <h3>Nike Air Max</h3>
+                <p>Delivery was late by 2 days.</p>
+            </div>
+            <div class="complaint-card">
+                <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519" alt="Puma Runner">
+                <h3>Puma Runner</h3>
+                <p>Size was slightly smaller.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+        <div class="checkout-container">
+            <div class="contact-top">
+                <h2>Contact</h2>
+                <a href="#">Sign in</a>
+            </div>
+            
+            <input type="email" placeholder="Email" class="checkout-input big-input">
+            
+            <div class="checkbox-row">
+                <input type="checkbox" checked>
+                <label>Email me with news and offers</label>
+            </div>
+
+            <!-- DELIVERY -->
+            <h2 class="delivery-title">Delivery</h2>
+            <select class="checkout-input big-input">
+                <option>Pakistan</option>
+                <option>India</option>
+                <option>UAE</option>
+            </select>
+
+            <!-- NAME -->
+            <div class="two-inputs">
+                <input type="text" placeholder="First name" class="checkout-input">
+                <input type="text" placeholder="Last name" class="checkout-input">
+            </div>
+
+            <!-- ADDRESS -->
+            <input type="text" placeholder="Address" class="checkout-input big-input">
+
+            <!-- CITY -->
+            <div class="two-inputs">
+                <input type="text" placeholder="City" class="checkout-input">
+                <input type="text" placeholder="Postal code" class="checkout-input">
+            </div>
+
+            <!-- PHONE -->
+            <input type="text" placeholder="Phone" class="checkout-input big-input">
+
+            <!-- SAVE INFO -->
+            <div class="checkbox-row">
+                <input type="checkbox">
+                <label>Save this information for next time</label>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 RSS - Rana Shoes Shop</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
